@@ -1,7 +1,9 @@
 # python
-파이썬 메소드를 설명하는 공간입니다.
+파이썬에 대해 설명하는 공간입니다.
 
 메소드에 대한 설명 및 사용법을 작성하겠습니다
+
+사용하기 편한 코드를 작성하겠습니다
 
 
 [암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
