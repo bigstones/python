@@ -1,4 +1,4 @@
-# ython
+# python
 파이썬 메소드를 설명하는 공간입니다.
 
 메소드에 대한 설명 및 사용법을 작성하겠습니다
@@ -11,3 +11,5 @@
 [python 버전 수동설정](https://github.com/bigstones/python/blob/master/python%20%EB%B2%84%EC%A0%84%20%EC%98%A4%EB%A5%98%20%EB%82%AC%EC%9D%84%20%EB%95%8C)
 
 [matplotlib 한글화](https://github.com/bigstones/python/blob/master/Matplotlib%20%ED%95%9C%EA%B8%80%ED%99%94.ipynb)
+
+[DB에서 DB로 전송](https://github.com/bigstones/python/blob/master/db_to_db.py)
