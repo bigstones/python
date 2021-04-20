@@ -1,0 +1,6 @@
+# 서로다른 리스트 붙이기
+list_a = [1,2]
+list_b = [3,4]
+
+list_c = list_a + list_b
+# list_c = [1,2,3,4]
