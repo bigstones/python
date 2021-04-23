@@ -1,0 +1,44 @@
+deque는 양방향 큐를 의미한다 
+
+기본적으로 큐(queue)는 선입선출 방식으로 작동하는데
+
+deque는 앞 뒤 양쪽 방향에서 엘리먼트를 추가하거나 제거할 수 있다
+
+데크는 양 끝 엘리먼트의 append와 pop이 압도적으로 빠르다고 한다
+
+사용법
+from collections import deque
+
+deq = deque()
+
+deq.appendleft()
+deq.append()
+
+deq.popleft()
+deq.pop()
+
+deque.append(item): item을 데크의 오른쪽 끝에 삽입한다.
+deque.appendleft(item): item을 데크의 왼쪽 끝에 삽입한다.
+deque.pop(): 데크의 오른쪽 끝 엘리먼트를 가져오는 동시에 데크에서 삭제한다.
+deque.popleft(): 데크의 왼쪽 끝 엘리먼트를 가져오는 동시에 데크에서 삭제한다.
+deque.extend(array): 주어진 배열(array)을 순환하면서 데크의 오른쪽에 추가한다.
+deque.extendleft(array): 주어진 배열(array)을 순환하면서 데크의 왼쪽에 추가한다.
+deque.remove(item): item을 데크에서 찾아 삭제한다.
+
+deque.rotate(num): 데크를 num만큼 회전한다(양수면 오른쪽, 음수면 왼쪽).
+
+rotate 예시
+deq = deque([1, 2, 3, 4, 5])
+
+deq.rotate(1)
+print(deq)
+# deque([5, 1, 2, 3, 4])
+
+deq.rotate(-1)
+print(deq)
+# deque([1, 2, 3, 4, 5])
+
+
+데크는 스택처럼 사용할 수도 있고, 큐 처럼 사용할 수도 있다.
+
+시작점의 값을 넣고 빼거나, 끝 점의 값을 넣고 빼는 데 최적화된 연산 속도를 제공한다.
