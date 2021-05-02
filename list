@@ -18,3 +18,7 @@ list.sort()
 list.sort(reverse=True)
 ### 내림차순 정렬
 
+
+# 중복제거
+list(set(list_a))
+### set형태로 변환 후 list 형태로 다시 변환하는 방식
