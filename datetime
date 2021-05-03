@@ -1,0 +1,16 @@
+datetime을 만들 수 있는 메소드
+
+사용법
+
+import datetime
+
+
+datetime.datetime.now() # 현재 시간
+
+datetime.timedelta([option]=1) # 1주의 데이터
+
+# weeks, days, hours, minutes, seconds, milliseconds, microseconds 등의 옵션이 있다
+# 여러개의 옵션을 한번에 입력할 수 있다.
+
+ex) 4시간 30분
+datetime.timedelta(hours=4, minutes=30)
