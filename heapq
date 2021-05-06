@@ -5,18 +5,16 @@ min heap 만 있는 것으로 다들 알고있는데 max heap 기능도 구현�
 다만 최대값을 추가하는 heappush_max는 없어 추가, 삭제가 지속적으로 필요한 경우 값의 부호를 
 min heap을 사용해서 연산하는 것이 수월할 것
 
-
+힙 형태로 iterable값을 수정하는 함수
 heapq.heapify(list)
-
 heapq._heapify_max(list)
 
-
+0번째 값을 pop하고, heap형태로 만들어주는 메소드
 heapq.heappop(list)
-
 heapq._heappop_max(list)
 
 
-
+iterable에 value값을 마지막값으로 집어넣기ㅁ
 heapq.heappush(list, value)
 
 heapq.heappushpop(list, value)
