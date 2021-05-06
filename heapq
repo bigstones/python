@@ -1,1 +1,28 @@
-heapq 는 내부적으로 순서 정렬해주는게 있따
+heapq 는 내부적으로 이분 트리형식의 구조를 가지고있어 일일히 비교하는 논리보다 비교적 빠르게 최대 최소값을 구할 수 있다
+
+min heap 만 있는 것으로 다들 알고있는데 max heap 기능도 구현되어있다
+
+다만 최대값을 추가하는 heappush_max는 없어 추가, 삭제가 지속적으로 필요한 경우 값의 부호를 
+min heap을 사용해서 연산하는 것이 수월할 것
+
+
+heapq.heapify(list)
+
+heapq._heapify_max(list)
+
+
+heapq.heappop(list)
+
+heapq._heappop_max(list)
+
+
+
+heapq.heappush(list, value)
+
+heapq.heappushpop(list, value)
+
+heapq.heapreplace(list, value)
+
+heapq.nlargest(n, list)
+
+heapq.nsmallest(n, list)
