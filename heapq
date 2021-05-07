@@ -6,21 +6,22 @@ min heap 만 있는 것으로 다들 알고있는데 max heap 기능도 구현�
 min heap을 사용해서 연산하는 것이 수월할 것
 
 힙 형태로 iterable값을 수정하는 함수
-heapq.heapify(list)
-heapq._heapify_max(list)
+heapq.heapify(iterable)
+heapq._heapify_max(iterable)
 
 0번째 값을 pop하고, heap형태로 만들어주는 메소드
-heapq.heappop(list)
-heapq._heappop_max(list)
+heapq.heappop(iterable)
+heapq._heappop_max(iterable)
 
+# 주의할 사항은 pop하기 전에heapify를 해주지 않으면 그냥 맨 앞에 있는 값(index=0 인 값)이 return 될 수 있으니 heapify 이후 실행하자
 
-iterable에 value값을 마지막값으로 집어넣기ㅁ
-heapq.heappush(list, value)
+iterable에 value값을 마지막값으로 집어넣기
+heapq.heappush(iterable, value)
 
-heapq.heappushpop(list, value)
+heapq.heappushpop(iterable, value)
 
-heapq.heapreplace(list, value)
+heapq.heapreplace(iterable, value)
 
-heapq.nlargest(n, list)
+heapq.nlargest(n, iterable)
 
-heapq.nsmallest(n, list)
+heapq.nsmallest(n, iterable)
