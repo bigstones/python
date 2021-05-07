@@ -1,0 +1,27 @@
+# 서로다른 리스트 붙이기
+list_a = [1,2]
+list_b = [3,4]
+
+list_c = list_a + list_b
+### list_c = [1,2,3,4]
+
+# 일정값 리스트 만들기
+
+tmp_list = [0]*4
+### [0,0,0,0]
+
+# 값 순서대로 정렬
+
+list.sort()
+### 오름차순 정렬
+
+list.sort(reverse=True)
+### 내림차순 정렬
+
+
+# 중복제거
+list(set(list_a))
+### set형태로 변환 후 list 형태로 다시 변환하는 방식
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMyNjMwOTQxMV19
+-->
