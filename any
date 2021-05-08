@@ -1,1 +1,13 @@
-전달받은 자료형의 element 중 하나라도 True일 경우 True를 돌려준다. 
+전달받은 자료형의 element 중 하나라도 True일 경우 True를 돌려준다.
+
+사용예
+
+sample_list = [1,2,3,4]
+
+any(i>2 for i in smaple_list)
+
+#2 이상인 값이 있으므로 True 를 return 한다
+
+any(i>4 for i in sample_list)
+
+#4 이상인 값이 없으므로 False 를 return 한다
