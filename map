@@ -1,0 +1,17 @@
+
+map 함수는 iterable 각각의 원소에 함수를 적용해주고 싶을 때 사용할 수 있는 기본함수다
+
+예)
+def plus_(val):
+    val+=1
+    return val
+    
+
+sample_list = [1,2,3,4]
+
+
+list(map(plus_, sample_list))
+
+# [2,3,4,5]
+
+와 같이 사용할 수 있다
