@@ -1,0 +1,11 @@
+집합적인 계산할 때 set이 좋지용 ㅎㅎ
+
+사용법
+
+smp_set1 = {'a' ,'b', 'c'}
+
+smp_set2 = {'b', 'c', 'd'}
+
+smp_set1 - smp_set2
+
+# {'a', 'b'}
