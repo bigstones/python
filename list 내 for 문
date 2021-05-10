@@ -1,19 +1,37 @@
+list 내 for문은 반복문을 통해 특정 값을 가지는 list를 만들 때 유용하다
+
 sample_a = 123
-list = [i for i in range(sample_a)]
+
+순서대로 list 에 집어넣을 수 있다
+list_ = [i for i in range(sample_a)]
 
 # [0, 1, 2, 3, 4, 5, 6, 7, 8, ..., 119, 120, 121, 122]
 
-list = [i * 3 for i in range(sample_a)]
+
+연산 후에 집어넣을 수도 있다
+list_ = [i * 3 for i in range(sample_a)]
 
 # [0, 3, 6, 9, 12, 15, ..., 360, 363, 366]
 
-list = [i for i in range(sample_a) if i%2==1]
+
+조건문을 통과한 값만 집어넣을 수도 있다
+list_ = [i for i in range(sample_a) if i%2==1]
 
 # [1, 3, 5, 7, 9, 11, ..., 197, 199, 121]
 
-list = [i * j 
+
+for 문을 여러개 한번에 쓸 수도 있고
+list_ = [i * j 
        for i in range(sample_a) 
        for j in range(sample_a)]
     
 # [0, 0, 0, 0, 0, 0, ..., 14762, 14884]
 
+
+for 문과 if문을 조합해서 사용도 가능하다
+list_ = [i * j
+        for i in range(sample_a) if i%2==0 
+        for j in range(sample_a) if j%3==0]
+        
+# 2의 배수와 3의 배수의 곱 조합
+#[0, 0, 0, 0, 0, 0 , ..., 13176, 13542, 13908, 14274, 14640]
