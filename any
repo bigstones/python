@@ -11,3 +11,15 @@ any(i>2 for i in smaple_list)
 any(i>4 for i in sample_list)
 
 #4 이상인 값이 없으므로 False 를 return 한다
+
+list_a = [True, False]
+
+any(list_a)
+
+# list 내에 True 값이 있으므로 True 를 return 한다
+
+list_a = [True, False]
+
+any(list_a)
+
+# list 내에 True 값이 있으므로 True 를 return 한다
