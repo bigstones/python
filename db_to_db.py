@@ -1,3 +1,7 @@
+'''
+DB끼리 데이터 전송하기 어렵거나 데이터를 수정해서 전송해야하는 경우 pandas의 to_sql과 sqlalchemy를 응용하여 데이터를 전송할 수 있다
+'''
+
 import pandas as pd
 import psycopg2 as pg
 from datetime import datetime
