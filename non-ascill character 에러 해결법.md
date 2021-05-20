@@ -5,7 +5,7 @@ SyntaxError: Non-ASCII character '\xec' in file make_data.py on line 14, but no 
 
 해결방법
 
-		# -*- coding: utf-8 -*-
+	# -*- coding: utf-8 -*-
         
         
         
@@ -15,4 +15,4 @@ SyntaxError: Non-ASCII character '\xec' in file make_data.py on line 14, but no 
 
 혹시나 euc-kr 를 사용한다면 다음 코드를 넣어주면 된다
 
-		# -*- coding: euc-kr -*-
+	# -*- coding: euc-kr -*-
