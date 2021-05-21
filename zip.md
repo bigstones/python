@@ -24,6 +24,6 @@ zip 함수로 넘기는 인자의 길이가 다르면 가장 짧은 인자를 �
 
 dict 함수와 함께 사용하는 방법도 있습니다
 
-dict(zip(asdf,qwer))
+	dict(zip(asdf,qwer))
 
-{'a':'q', 's':'w', 'd':'e', 'f':'r'}
+	{'a':'q', 's':'w', 'd':'e', 'f':'r'}
