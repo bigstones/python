@@ -1,7 +1,7 @@
 # python
-파이썬에 대해 설명하는 공간입니다.
+파이썬 메소드에 대해 설명하는 공간입니다.
 
-###### python 주석
+## 주석
 
 jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하지 않은 메소드에 '?' 값을 붙여 실행했을 때 그 메소드의 설명을 볼 수 있다
 
@@ -15,10 +15,15 @@ jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하
           반환값 설명
         '''
 
-메소드에 대한 설명 및 사용법을 작성하겠습니다
 
-사용하기 편한 코드를 작성하겠습니다
+## numpy
 
+[중복제거](https://github.com/bigstones/python/blob/master/code/numpy/%EC%A4%91%EB%B3%B5%EC%A0%9C%EA%B1%B0.py)
+    
+    import numpy as np
+    np.unique([변수])
+    
+## pandas
 
 [암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
 
