@@ -25,6 +25,8 @@ jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하
     
 ## pandas
 
+
+## 기타
 [암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
 
 [pip install 로 패키지 설치 후 인식이 안될 때](https://github.com/bigstones/python/blob/master/module%20%EC%9D%B8%EC%8B%9D%EC%9D%B4%20%EC%95%88%EB%90%A0%20%EB%95%8C)
