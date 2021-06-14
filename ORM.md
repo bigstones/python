@@ -2,6 +2,8 @@
 
 ###### ORM(Object Relational Mapping)이란 객체와 관계형 데이터베이스의 데이터를 자동으로 매핑(연결)해주는 것을 말한다.
 
+python의 orm으로는 sqlalchemy가 있다
+
 
 ##### ORM의 장단점
 
