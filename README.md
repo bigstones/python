@@ -1,6 +1,28 @@
 # python
 파이썬 메소드에 대해 설명하는 공간입니다.
 
+## 버전관리
+버전이 안맞아서 라이브러리가 실행이 안될 때
+
+레포지토리 추가
+
+    sudo add-apt-repository ppa:deadsnakes/ppa
+레포지토리 업데이트
+
+    sudo apt-get update
+python설치
+
+    sudo apt-get install python[version]
+    sudo apt install python3-pip
+버전 설정 1단계
+
+    sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python[version1] 1
+    sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python[version2] 2
+버전 설정
+    
+    sudo update-alternatives --config python3
+
+
 ## 주석
 
 jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하지 않은 메소드에 '?' 값을 붙여 실행했을 때 그 메소드의 설명을 볼 수 있다
