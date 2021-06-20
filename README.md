@@ -47,6 +47,13 @@ jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하
     
 ## pandas
 
+    import pandas as pd
+    pd.mean #평균
+    pd.std #표준편차
+    pd.median #중앙값
+    pd.var #분산
+
+
 
 ## 기타
 [암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
