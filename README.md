@@ -53,10 +53,51 @@ jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하
     pd.median #중앙값
     pd.var #분산
 
+## Crypto
 
+[암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
+
+pycryptodome이 설치돼있어야 합니당
+
+pip install pycryptodome으로 설치할 수 있습니다
+
+    import base64
+    import hashlib
+
+    from Crypto import Random 
+    from Crypto.Cipher import AES
+    from Crypto.Protocol.KDF import PBKDF2
+
+    random = 'sample_random'
+    salt = 'sample_salt'
+
+
+    BS = 16
+    pad = lambda s: s + (BS - len(s) % BS) * chr(BS - len(s) % BS)
+    unpad = lambda s: s[0:-s[-1]]
+    key = PBKDF2(random, salt, 64, 1000)[:32]
+
+    def get_private_key(random):
+        kdf = PBKDF2(random, salt, 64, 1000)
+        key = kdf[:32]
+        return key
+
+    def encrypt(raw, random):
+        private_key = get_private_key(random)
+        raw = pad(raw).encode('utf-8')
+        iv = Random.new().read(AES.block_size)
+        cipher = AES.new(private_key, AES.MODE_CBC, iv)
+        return base64.b64encode(iv + cipher.encrypt(raw))
+
+    def decrypt(enc, random):
+        private_key = get_private_key(random)
+        enc = base64.b64decode(enc)
+        iv = enc[:16]
+        cipher = AES.new(private_key, AES.MODE_CBC, iv)
+        return unpad(cipher.decrypt(enc[16:]))
 
 ## 기타
-[암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
+
 
 [pip install 로 패키지 설치 후 인식이 안될 때](https://github.com/bigstones/python/blob/master/module%20%EC%9D%B8%EC%8B%9D%EC%9D%B4%20%EC%95%88%EB%90%A0%20%EB%95%8C)
 
