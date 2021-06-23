@@ -37,6 +37,11 @@ jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하
           반환값 설명
         '''
 
+## string
+string을 통해 검색기능을 구현하면서 필요했던 라이브러리들이다
+
+    ''.strip()
+    ''.replace(' ', '')
 
 ## numpy
 
