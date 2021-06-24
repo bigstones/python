@@ -58,6 +58,10 @@ string을 통해 검색기능을 구현하면서 필요했던 라이브러리들
     pd.median #중앙값
     pd.var #분산
 
+## sqlalchemy
+
+    or_() # or연산
+
 ## Crypto
 
 [암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
