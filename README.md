@@ -61,6 +61,7 @@ string을 통해 검색기능을 구현하면서 필요했던 라이브러리들
 ## sqlalchemy
 
     or_() # or연산
+    and_() # and연산
 
 ## Crypto
 
