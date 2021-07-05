@@ -1,7 +1,7 @@
 # python
 파이썬 메소드에 대해 설명하는 공간입니다.
 
-## 버전관리
+## python 버전관리
 버전이 안맞아서 라이브러리가 실행이 안될 때
 
 레포지토리 추가
@@ -22,6 +22,15 @@ python설치
     
     sudo update-alternatives --config python3
 
+## pip 버전관리
+
+pip 패키지 설치 리스트 조회
+
+    pip list
+
+pip 패키지 설치 리스트 requirements.txt 파일로 생성
+
+    pip freeze > requirements.txt
 
 ## 주석
 
