@@ -2,6 +2,11 @@
 파이썬 메소드에 대해 설명하는 공간입니다.
 
 ## python 버전관리
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
+
 버전이 안맞아서 라이브러리가 실행이 안될 때
 
 레포지토리 추가
@@ -21,9 +26,15 @@ python설치
 버전 설정
     
     sudo update-alternatives --config python3
+</div>
+</details>
 
 ## pip 버전관리
 
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
+    
 pip 패키지 설치 리스트 조회
 
     pip list
@@ -31,8 +42,15 @@ pip 패키지 설치 리스트 조회
 pip 패키지 설치 리스트 requirements.txt 파일로 생성
 
     pip freeze > requirements.txt
+    
+</div>
+</details>
 
 ## 주석
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 
 jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하지 않은 메소드에 '?' 값을 붙여 실행했을 때 그 메소드의 설명을 볼 수 있다
 
@@ -46,20 +64,42 @@ jupyter notebook에서 파이썬 라이브러리를 실행하다보면 정확하
           반환값 설명
         '''
 
+</div>
+</details>
+
 ## string
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
+
 string을 통해 검색기능을 구현하면서 필요했던 라이브러리들이다
 
     ''.strip()
     ''.replace(' ', '')
 
+</div>
+</details>
+
 ## numpy
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 
 [중복제거](https://github.com/bigstones/python/blob/master/code/numpy/%EC%A4%91%EB%B3%B5%EC%A0%9C%EA%B1%B0.py)
     
     import numpy as np
     np.unique([변수])
+
+</div>
+</details>
     
 ## pandas
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 
     import pandas as pd
     pd.mean #평균
@@ -67,12 +107,26 @@ string을 통해 검색기능을 구현하면서 필요했던 라이브러리들
     pd.median #중앙값
     pd.var #분산
 
+</div>
+</details>
+
 ## sqlalchemy
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 
     or_() # or연산
     and_() # and연산
 
+</div>
+</details>
+
 ## Crypto
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 
 [암호화](https://github.com/bigstones/python/blob/master/%5B99%5D%EB%82%B4%EB%B6%80_pycryptodome.py)
 
@@ -114,6 +168,9 @@ pip install pycryptodome으로 설치할 수 있습니다
         iv = enc[:16]
         cipher = AES.new(private_key, AES.MODE_CBC, iv)
         return unpad(cipher.decrypt(enc[16:]))
+
+</div>
+</details>
 
 ## 기타
 
