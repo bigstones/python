@@ -116,6 +116,7 @@ string을 통해 검색기능을 구현하면서 필요했던 라이브러리들
 <summary>접기/펼치기</summary>
 <div markdown="1">
 
+    pip install sqlalchemy
     or_() # or연산
     and_() # and연산
 
