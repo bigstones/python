@@ -174,9 +174,10 @@ pip install pycryptodome으로 설치할 수 있습니다
 </details>
 
 ## scheduler
-> celery
-> asyncio
-> airflow
+> celery  
+> asyncio  
+> airflow  
+> sched
 
 ## 기타
 
