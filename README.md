@@ -179,6 +179,8 @@ pip install pycryptodome으로 설치할 수 있습니다
 > airflow  
 > sched
 
+# open
+
 ## 기타
 
 
