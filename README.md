@@ -102,10 +102,10 @@ string을 통해 검색기능을 구현하면서 필요했던 라이브러리들
 <div markdown="1">
 
     import pandas as pd
-    pd.mean #평균
-    pd.std #표준편차
-    pd.median #중앙값
-    pd.var #분산
+    pd.mean() #평균
+    pd.std() #표준편차
+    pd.median() #중앙값
+    pd.var() #분산
 
 </div>
 </details>
@@ -134,6 +134,7 @@ string을 통해 검색기능을 구현하면서 필요했던 라이브러리들
 pycryptodome이 설치돼있어야 합니당
 
 pip install pycryptodome으로 설치할 수 있습니다
+
 
     import base64
     import hashlib
@@ -174,12 +175,33 @@ pip install pycryptodome으로 설치할 수 있습니다
 </details>
 
 ## scheduler
-> celery  
-> asyncio  
-> airflow  
-> sched
 
-# open
+
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
+
+    celery  
+    asyncio  
+    airflow  
+    sched
+    
+</div>
+</details>
+
+## open
+
+    f = open('test.txt', 'w')
+    
+    'C:/test.txt'
+    r'C:\test.txt'
+    
+    'r'
+    'w'
+    'a'
+
+    f.close()
+    
 
 ## 기타
 
